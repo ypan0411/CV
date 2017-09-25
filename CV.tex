@@ -34,7 +34,10 @@ ItalicFont = Fontin-Italic.otf
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
+\addtolength{\voffset}{-1cm}
+\addtolength{\hoffset}{-1.2cm}
+\addtolength{\textheight}{5cm}
+\addtolength{\textwidth}{2cm}
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
@@ -69,7 +72,10 @@ ItalicFont = Fontin-Italic.otf
 	
 	%--------------------TITLE-------------
 	\par{\centering
-		{\huge{\textsc{Yu Pan}}}\bigskip\par}
+		{\huge{\textsc{Yu Pan}}}\\
+		Phone: +1 (412) 320-9790 \\
+		Email: \href{mailto:y.pan@jacobs-university.de}{y.pan@jacobs-university.de}\\
+		Github: \href{https://github.com/ypan0411}{github.com/ypan0411} \par}
 	
 	%--------------------SECTIONS-----------------------------------
 	%Section: Objective
@@ -77,26 +83,14 @@ ItalicFont = Fontin-Italic.otf
 	Looking for a summer internship position related to machine learning, computer vision or software engineering from the beginning of June to the end of August.
 	
 	
-	%Section: Personal Data
-	\section{Personal Data}
-	\begin{tabular}{rl}
-		\textsc{Phone:}     & +49 176 3543 2018\\
-		\textsc{Email:}     & \href{mailto:y.pan@jacobs-university.de}{y.pan@jacobs-university.de} \\
-		\textsc{Github:} &
-		\href{https://github.com/ypan0411}{github.com/ypan0411}
-	\end{tabular}
-	
-	
 	%Section: Education
 	\section{Education}
 	\begin{tabular}{r|l}
 	    \textsc{Sep 2017 - } & \textbf{Carnegie Mellon University} \\\textsc{Current}&\emph{Pittsburgh, United States}
-		\\& --- School of Computer Science
-		\\& --- One semester exchange program
-		\\ \multicolumn{2}{c}{} \\
+		\\& --- One semester exchange to School of Computer Science
+		\\ \multicolumn{1}{c}{} \\
 		\textsc{Sep 2015 - } & \textbf{Jacobs University} \\\textsc{Current}&\emph{Bremen, Germany}
-		\\& --- Bachelor in Computer Science
-		\\& --- Graduation expected in June 2018
+		\\& --- Bachelor in Computer Science (Graduation year: 2018)
 		\\& --- Current GPA: 1.80 on a 1.0 to 5.0 scale
 	\end{tabular}
 	
@@ -104,7 +98,7 @@ ItalicFont = Fontin-Italic.otf
 	\section{Skills}
 	\begin{tabular}{rl}
 		Fluent in: & C/C++, LaTeX, Python\\
-		Intermediate Knowledge:& SML, Scala, Linux, OpenCV, OpenGL, Mathematica, R, Selenium\\
+		Intermediate Knowledge:& SML, Ocaml, Scala, Linux, Mathematica, R, OpenCV, OpenGL, Selenium\\
 		Basic Knowledge:& SQL, HTML, Matlab, BeautifulSoup, Docker\\
 	\end{tabular}
 	
@@ -114,14 +108,29 @@ ItalicFont = Fontin-Italic.otf
 	\section{Work Experience}
 	\begin{tabular}{r|l}
 		\textsc{Sep 2016 - } & \textbf{Teaching Assistant} \\\textsc{May 2017}&\emph{Jacobs University, Bremen}
-		\\& --- \textsc{General Computer Science}
-		\\& --- \textsc{Mathematical Software Lab} 
-		\\& --- \textsc{Secure and Dependable System}
-		\\ \multicolumn{2}{c}{} \\
-		\textsc{June 2017 - } & \textbf{Software Engineer Internship} \\\textsc{Aug 2017}&\emph{Preisenergie, Munich}
+		\\& --- Fall 2016: General Computer Science
+		\\& --- Fall 2016: Mathematical Software Lab
+		\\& --- Spring 2017: Secure and Dependable System
+		\\ \multicolumn{1}{c}{} \\
+		\textsc{Jun 2017 - } & \textbf{Software Engineer Internship} \\\textsc{Aug 2017}&\emph{Preisenergie, Munich}
 		\\& --- Build an automated web-application testing schema using Selenium
 		\\& --- Execute web scraping using Python with Selenium and BeautifulSoup
 		\\& --- Perform clustering analysis using R
+	\end{tabular}
+	
+	%Section: Projects
+	\section{Projects}
+	\begin{tabular}{r | l}
+	    \textsc{Sep 2017 - } & \textbf{C0 compiler} \\\textsc{Current}& --- C0 is a safe subset of C programming language
+	    \\& --- Use Ocaml with the help of ocamllex and ocamlyacc to write a compiler for C0
+		\\ \multicolumn{1}{c}{} \\
+		\textsc{Mar 2017 - } & \textbf{Hand-written number recognition} \\\textsc{May 2017}& --- Based on a large dataset with one thousand hand-written numbers from 0 to 9
+		\\& --- RBF (Radial basis function) and linear regression are used in this project
+		\\& --- Achiev a 2.98\% $\pm$ 0.24\% misclassification rate
+		\\ \multicolumn{1}{c}{} \\
+		\textsc{Oct 2016 - } & \textbf{Raster Graphics} 
+		\\\textsc{Nov 2016}& --- Use C++ to simulate glBufferData (a OpenGL function) from scratch
+		\\& --- Ray casting and anti-aliasing algorithms are used to plot a triangle mesh
 	\end{tabular}
 	
 	%Section: Languages
